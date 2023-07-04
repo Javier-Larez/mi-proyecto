@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Tahoma, sans-serif, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    background-color: #fbfbfb;
+    color: #0f0f0f;
+}
+
+
+h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+h2{
+    font-size: 28px;
+}
+
+p{
+   
+    margin: 16px 0;
+}
+
+
+img{
+   
+    max-width: 100px;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    height: 90px;
+    width: 100%;
+    background-color: #fbfbfb;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 3px 10px --5px #5f5f5f;
+
+}
+
+.logo{
+      width: 120px;
+      margin-left: 16px;
+}
+
+ ul#menu {
+display: flex;
+font-size: 20px;
+
+}
+
+li.menu-item a {
+    border-color: rgb(135, 93, 117);
+    border-style: outset;
+    border-radius: 5%;
+    border-bottom-width: 5px;
+    padding: 16px;
+    display: inline-block;
+}
+
+
+
+ul {
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+section{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    min-height: 62vh;
+    padding-top: 120px;
+
+
+}
+
+section#inicio {
+justify-content: space-around;
+
+}
+
+figure.presentacion-img{
+  margin-bottom: 20px;
+}
+figure.presentacion-img img{
+border-radius: 50%;
+max-width: 400px;
+}
+
+article.presentacion{
+width: 100%;
+text-align: center;
+margin: 28px;
+color: black;
+font-size: 20px;
+line-height: 1.2;
+}
+
+a.boton{
+    background-color: #af599e ;
+    color: #fbfbfb;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-size: 20px;
+    
+}
+
+section#contacto{
+justify-content: space-around;
+
+}
+
+article.informacion{
+    width: 100%;
+    text-align: center;
+    margin: 28px;
+    background-color: rgba(175, 89, 158, 0.3);
+    color: #0f0f0f;
+    font-size: 20px;
+    line-height: 1.2;
+
+}
+
+
+h2 {
+    font-size: 28px;
+
+}
+
+/*tablet
+@media (min-width:768px){
+    P  {
+        font-size: 18px;
+
+    }
+    h2{
+        font-size: 32px;
+
+    }  
+    
+    section#inicio{
+
+        flex-direction: row;
+    }
+
+    article.presentacion{
+
+        width: 50%;
+        text-align: center;
+    }
+}*/
+
+/*desktop*/
+@media (min-width:1024px){
+    h1{
+        font-size: 48px;
+        text-align: left;}
+
+    h2{
+        font-size: 32px;
+
+    }  
+    
+    section#inicio{
+
+        flex-direction: row;
+    }
+
+    article.presentacion{
+
+        width: 50%;
+        text-align: left;
+    }
+
+    figure.imagenes img{
+
+        margin: 32px;
+        
+
+
+    }
+        
+    }
+
+
+/*interaccion de botones en el inicio (header)*/
+li.menu-item:hover,
+a.btn:hover{
+
+    background: #f0a7e1;
+    transition: backgroun-color 0.3s;
+}
+
+
+/*funcion en el boton de descargar CV*/
+a.boton:hover{
+
+    background-color: #fbfbfb;
+    color: #a2348c;
+    transition: 0.3s;
+
+}
+/*funcion de deslizar el cursor sobre las imagenes de contacto y cambia de fondo*/
+figure.imagenes img:hover{
+    background-color: #f5e8f2;
+
+
+}
